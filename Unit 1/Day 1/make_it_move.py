@@ -13,6 +13,10 @@ clock = pygame.time.Clock()
 
 player_x = 100
 player_y = 300
+
+player2_x = 300
+player2_y = 100
+
 player_size = 40
 player_speed = 5
 
@@ -33,9 +37,22 @@ while running:
     if keys[pygame.K_DOWN]:
         player_y = player_y + player_speed
 
+    if keys[pygame.K_d]:
+        player2_x = player2_x + player_speed
+    if keys[pygame.K_a]:
+        player2_x = player2_x - player_speed
+    if keys[pygame.K_w]:
+        player2_y = player2_y - player_speed
+    if keys[pygame.K_s]:
+        player2_y = player2_y + player_speed
+
     screen.fill((20, 20, 40))
     player_box = (player_x, player_y, player_size, player_size)
-    pygame.draw.rect(screen, (255, 200, 0), player_box)
+    player2_box = (player2_x, player2_y, player_size, player_size)
+
+    pygame.draw.rect(screen, (255, 0, 0), player_box)
+    pygame.draw.rect(screen, (0, 255, 0), player2_box)
+
     pygame.display.flip()
     clock.tick(60)
 
