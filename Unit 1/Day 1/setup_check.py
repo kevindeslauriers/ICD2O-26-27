@@ -14,6 +14,7 @@ screen = pygame.display.set_mode((400, 200))
 pygame.display.set_caption("Setup Check: close this window when you see it")
 screen.fill((0, 150, 80))
 pygame.display.flip()
+pygame.event.pump()
 pygame.time.wait(3000)
 pygame.quit()
 
