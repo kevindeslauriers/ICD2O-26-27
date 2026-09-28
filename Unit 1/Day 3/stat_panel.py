@@ -19,7 +19,7 @@ player_name = "Nova"
 score = 0
 lives = 3
 player_speed = 4.0
-has_key = False
+has_key = ""
 coin_value = 10
 message = "Find the key. Then find the door."
 # ============================================================
