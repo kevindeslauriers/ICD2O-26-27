@@ -100,12 +100,12 @@ while running:
     # ============================================================
     # EDIT ZONE 2: THE DECISIONS
     # ============================================================
-    if score >= 30:
+    if score >= 10:
+        rank = "Bronze"
+    elif score >= 30:
         rank = "Gold"
     elif score >= 20:
         rank = "Silver"
-    elif score >= 10:
-        rank = "Bronze"
     else:
         rank = "No rank yet"
 
