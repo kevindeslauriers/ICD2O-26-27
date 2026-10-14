@@ -15,7 +15,7 @@ import random
 # EDIT ZONE: the secret and the range
 # ============================================================
 low = 1
-high = 20
+high = 1000
 secret_number = random.randint(low, high)
 # ============================================================
 
@@ -32,6 +32,28 @@ print("I am thinking of a number from", low, "to", high)
 # secret_number. Inside the loop, ask for a guess as a whole number.
 # After the loop, print "You got it!"
 # ------------------------------------------------------------
+
+guess = -5
+num_guesses = 0
+
+while guess != secret_number:
+    guess = int(input("What is your guess? "))
+    num_guesses = num_guesses + 1
+    if guess > secret_number:
+        print("Too High")
+    elif guess < secret_number:
+        print("Too Low")
+    else:
+        print("Correct")
+
+if num_guesses <= 4:
+    print("Expert")
+elif num_guesses < 8:
+    print("Good")
+else:
+    print("Keep Practicing")
+
+
 
 
 

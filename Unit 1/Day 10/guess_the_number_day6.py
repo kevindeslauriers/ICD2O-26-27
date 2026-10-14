@@ -25,10 +25,10 @@ print("I am thinking of a number from 1 to 10.")
 # Ask for a guess as a whole number, then print "You got it!" if it
 # matches the secret. Nothing else yet.
 # ------------------------------------------------------------
-guess = int(input("What is your guess? "))
+# guess = int(input("What is your guess? "))
 
-if guess == secret_number:
-    print("You got it!")
+# if guess == secret_number:
+#     print("You got it!")
 
 
 
@@ -36,12 +36,12 @@ if guess == secret_number:
 # STAGE 2: add the other branch
 # Add an else so a wrong guess is told it is wrong.
 # ------------------------------------------------------------
-guess = int(input("What is your guess? "))
+# guess = int(input("What is your guess? "))
 
-if guess == secret_number:
-    print("You got it!")
-else:
-    print("Wrong!")
+# if guess == secret_number:
+#     print("You got it!")
+# else:
+#     print("Wrong!")
 
 
 
@@ -56,7 +56,7 @@ if guess == secret_number:
     print("You got it!")
 elif guess > secret_number:
     print("Too High")
-elif guess < secret_number:
+else:
     print("Too Low")
 
 
