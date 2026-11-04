@@ -9,18 +9,18 @@ import random
 for sentence in range(5):
     # Pick the word after "The player" (out of 10 sentences)
     roll = random.randint(1, 10)
-    if roll <= ???:          # how many sentences use jumps?
+    if roll <= 5:          # how many sentences use jumps?
         verb = "jumps"
-    elif roll <= ???:        # jumps + runs
+    elif roll <= 8:        # jumps + runs
         verb = "runs"
     else:
         verb = "falls"
 
     # Pick the ending (out of 10 sentences)
     roll = random.randint(1, 10)
-    if roll <= ???:          # how many sentences end with quickly?
+    if roll <= 4:          # how many sentences end with quickly?
         ending = "quickly"
-    elif roll <= ???:        # quickly + again
+    elif roll <= 7:        # quickly + again
         ending = "again"
     else:
         ending = "into the lava"
